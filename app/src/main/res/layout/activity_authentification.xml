@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".authentification">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+    <include layout="@layout/header"></include>
+
+         <TextView
+        android:id="@+id/Authentification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="90dp"
+        android:padding="8dp"
+        android:text="Authentification"
+        android:textSize="60dp"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+          <TextView
+        android:labelFor="@id/editVisiteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="8dp"
+        android:text="CodeVisiteur"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+           <EditText
+        android:id="@+id/editVisiteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number">
+
+           </EditText>
+
+           <TextView
+        android:labelFor="@id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="8dp"
+        android:text="Email Adresse"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+          <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="example@example.example" ></EditText>
+
+          <Button
+        android:id="@+id/btnEnvoyer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="ENVOYER"
+        android:onClick="CalculAleatoire"/>
+
+          <LinearLayout
+        android:id="@+id/Verification_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+              <TextView
+
+        android:id="@+id/CVerification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="8dp"
+        android:text="Code Vérification"
+        android:textSize="30dp" />
+
+               <EditText
+        android:id="@+id/editVerification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+               <Button
+        android:id="@+id/btnVerification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Vérification"
+        android:onClick="Verification"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

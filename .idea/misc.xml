@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_authentification.xml" value="0.1" />
+        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_fraisauforfait.xml" value="0.25" />
+        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_fraishorsforfait.xml" value="0.19047619047619047" />
+        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_historiquedesenvois.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_parametre.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_synthesedumois.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/footer.xml" value="0.18" />
+        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/header.xml" value="0.1875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
