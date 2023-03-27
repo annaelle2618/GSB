@@ -18,10 +18,10 @@
         android:id="@+id/Authentification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="90dp"
+        android:layout_margin="10dp"
         android:padding="8dp"
         android:text="Authentification"
-        android:textSize="60dp"
+        android:textSize="30dp"
         tools:layout_editor_absoluteX="103dp"
         tools:layout_editor_absoluteY="172dp" />
 
@@ -32,7 +32,7 @@
         android:layout_margin="0dp"
         android:padding="8dp"
         android:text="CodeVisiteur"
-        android:textSize="30dp"
+        android:textSize="20dp"
         tools:layout_editor_absoluteX="103dp"
         tools:layout_editor_absoluteY="172dp" />
 
@@ -52,7 +52,7 @@
         android:layout_margin="0dp"
         android:padding="8dp"
         android:text="Email Adresse"
-        android:textSize="30dp"
+        android:textSize="20dp"
         tools:layout_editor_absoluteX="103dp"
         tools:layout_editor_absoluteY="172dp" />
 

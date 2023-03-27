@@ -3,13 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_authentification.xml" value="0.1" />
+        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_authentification.xml" value="0.15" />
         <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_fraisauforfait.xml" value="0.25" />
         <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_fraishorsforfait.xml" value="0.19047619047619047" />
         <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_historiquedesenvois.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_parametre.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_synthesedumois.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_parametre.xml" value="5.0" />
+        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/activity_synthesedumois.xml" value="0.25" />
+        <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/detailsynthese.xml" value="0.22" />
         <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/footer.xml" value="0.18" />
         <entry key="..\:/Users/Annaelle/AndroidStudioProjects/GSB/app/src/main/res/layout/header.xml" value="0.1875" />
       </map>

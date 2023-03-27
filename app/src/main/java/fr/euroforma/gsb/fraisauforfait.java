@@ -65,9 +65,11 @@ public class fraisauforfait extends AppCompatActivity {
                 int posF1= typeF.getSelectedItemPosition();
                 Float s1 = q1 * Float.parseFloat(Valeurs[posF1]);
 
+
                 MSomme.setText(s1.toString());
             }
         });
+
 
 
     }
@@ -75,16 +77,42 @@ public class fraisauforfait extends AppCompatActivity {
         Intent retourintent = new Intent(fraisauforfait.this, MainActivity.class);
         startActivity(retourintent);
     }
-   public void clickbouton(View v){
-        Affiche(Quantite.getText().toString() +" "+typeF.getSelectedItem().toString() );
-    }
+   public void clickbouton(View v) {
+       Affiche(Quantite.getText().toString() + " " + typeF.getSelectedItem().toString());
+       if (Quantite.getText().toString().trim().length() == 0 || typeF.getSelectedItem().toString().length() == 0
+               || datedepense.getText().toString().trim().length() == 0) {
+           //teste si le champ quantite est renseigné ou si le champ type n'est pas vide
+           // et qu'on a selectionne l'une des 4 possibilités et si la date est renseignée
+           Affiche("Erreur! Champ vide");
+           return;
+       } else if (datedepense.getText().toString().trim().length() > 10 || datedepense.getText().toString().trim().length() < 8) {
+           //test sur la validité du champ date
+           Affiche("Erreur! Date invalide");
+           return;
+       } else if(Integer.parseInt(Quantite.getText().toString())<1){ //teste si la quantite est au moins 1
+           Affiche("Erreur! Quantité invalide");
+           return;
+
+       } else {
+
+           String tf1 = typeF.getSelectedItem().toString();
+           Integer q1 = Integer.parseInt(Quantite.getText().toString());
+           String d1 = datedepense.getText().toString();
+           Float m1 = Float.parseFloat(MSomme.getText().toString());
+
+
+           if (database.insertData(tf1, q1, d1, m1, tf1)) {
+               Affiche("Valeur ajoutée avec succès.Montant=" + m1);
+               return;
+           }
+       }
+   }
 
     public void Affiche(String msg){
         Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
     }
 
-    public void ShowCal(View vv)
-    {
+    public void ShowCal(View vv){
         picker = new DatePickerDialog(fraisauforfait.this,
                 new DatePickerDialog.OnDateSetListener() {
                     @Override
@@ -95,10 +123,6 @@ public class fraisauforfait extends AppCompatActivity {
                 },aaaa, mm, jj);//date qui s'affiche sur le calendrier
         picker.show();
     }
-    if(database.insertData(typeForfait.toString(),q,mDate.toString(),m,f)){
-        Affiche("Valeur ajoutée avec succès.Montant="+m);
-        return;
 
-    }
 
 }

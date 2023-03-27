@@ -30,8 +30,7 @@ public class authentification extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authentification);
-        this.getSharedPreferences("SHARED_PREF_USER_INFO", MODE_PRIVATE).edit().clear().commit(); //Ecraser l'ancien code visiteur
-
+        this.getSharedPreferences(SHARED_PREF_USER_INFO, MODE_PRIVATE).edit().clear().commit(); //Ecraser l'ancien code visiteur
         Verification_layout = (findViewById(R.id.Verification_Layout));
         codeSaisi=findViewById(R.id.editVerification);
         editVisiteur=findViewById(R.id.editVisiteur);
