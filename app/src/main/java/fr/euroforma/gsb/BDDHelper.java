@@ -93,7 +93,7 @@ public class BDDHelper extends SQLiteOpenHelper {
             if (mycursor != null) {
                 mycursor.moveToFirst();
             }
-            return mycursor;
+            return mycursor;!
         }
 
         public void deleteData ( int parseInt){
